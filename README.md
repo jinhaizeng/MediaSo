@@ -1,2 +1,3 @@
 # ijkplayerSo
 用于存放已经编译出来的ijkplayer文件
+注意本文的产物主要是基于FFmpeg的release_5.0分支编译出来的产物
