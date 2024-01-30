@@ -1,0 +1,14 @@
+prefix=/Volumes/RyanSSD/Code/FFmpeg/ffmpegOuput/aarch64
+exec_prefix=${prefix}
+libdir=/Volumes/RyanSSD/Code/FFmpeg/ffmpegOuput/aarch64/lib
+includedir=/Volumes/RyanSSD/Code/FFmpeg/ffmpegOuput/aarch64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.18.100
+Requires: 
+Requires.private: libswresample >= 4.3.100, libavutil >= 57.17.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -pthread -lm -latomic -lz
+Cflags: -I${includedir}
